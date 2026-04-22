@@ -1,13 +1,13 @@
-# Bilal Abdulkadir Muhammed – IT Support Portfolio
+#Bilal Abdulkadir Muhammed – IT Support Portfolio
 
 This repository contains the source code for my personal portfolio website, built and deployed using GitHub Pages.
 
-## 🌐 Live Website
+ 🌐 Live Website
 https://bilalabdulkadir.github.io
 
----
 
-## 📌 About This Project
+
+  About This Project
 This website showcases my skills, certifications, and hands-on experience in IT Support, troubleshooting, and system maintenance.
 
 It is designed to support:
@@ -15,26 +15,26 @@ It is designed to support:
 - Academic and college applications
 - Professional portfolio presentation
 
----
 
-## 📂 Project Structure
+
+  Project Structure
 
 - `index.html` – Main homepage
 - `about.html` – About me section
 - `projects.html` – IT projects and experience
 - `Bilal_Abdulkadir_CV.pdf` – Downloadable CV
 
----
 
-## 🛠️ Technologies Used
+
+ Technologies Used
 
 - HTML5
 - CSS3
 - GitHub Pages (for hosting)
 
----
 
-## 🔗 Professional Profiles
+
+ Professional Profiles
 
 - LinkedIn: https://www.linkedin.com/in/bilalabdulkadir
 - ServiceNow Learning: https://learning.servicenow.com/lxp?id=nl_public&user=bilalabdulkadir
@@ -42,23 +42,23 @@ It is designed to support:
 - Substack Blog: https://bilalabdulkadir.substack.com
 - GitHub: https://github.com/Bilalabdulkadir
 
----
 
-## 🎯 Purpose
+
+  Purpose
 
 This portfolio demonstrates my ability to:
 - Diagnose and resolve IT issues
 - Support users in technical environments
 - Work with modern tools and platforms
 
----
 
-## 📬 Contact
+
+ Contact
 
 For opportunities or collaboration:
-- Email: your-email@gmail.com
-- LinkedIn: https://www.linkedin.com/in/bilalabdulkadir
+📧 Email: bilalabdulkadir286@gmail.com
+🌍 LinkedIn: https://www.linkedin.com/in/bilalabdulkadir
 
----
+
 
 © 2026 Bilal Abdulkadir Muhammed
