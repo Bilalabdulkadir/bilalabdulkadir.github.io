@@ -4,131 +4,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>About Me | Bilal Abdulkadir</title>
+  <title>About | Bilal Abdulkadir Muhammed</title>
 
   <style>
-
-    body{
+    body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      background: #f4f4f4;
       line-height: 1.6;
     }
 
-    .container{
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-      padding: 20px;
-    }
-
-    header{
+    header {
       background: #1e3a8a;
       color: white;
-      padding: 20px 0;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    .card{
+    nav {
+      background: #2563eb;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
       background: white;
       padding: 20px;
       margin-top: 20px;
       border-radius: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
     }
 
-    h1, h2{
+    h1, h2 {
       color: #1e3a8a;
     }
 
-    ul{
-      list-style-type: square;
+    footer {
+      text-align: center;
+      background: #1e3a8a;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
     }
-
-    a{
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover{
-      text-decoration: underline;
-    }
-
-    .back{
-      display: inline-block;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>About Me</h1>
-  </header>
+<header>
+  <h1>About Me</h1>
+</header>
 
-  <div class="container">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+</nav>
 
-    <div class="card">
+<div class="container">
 
-      <p>
-        My name is Bilal Abdulkadir Muhammed. I am an Information Technology graduate
-        with experience in IT support, data analysis, and database management.
-      </p>
-
-      <p>
-        I am interested in technology, cybersecurity, data analysis, and continuous
-        professional development. I am preparing for further studies and professional opportunities.
-      </p>
-
-    </div>
-
-    <div class="card">
-
-      <h2>Technical Skills</h2>
-
-      <ul>
-        <li>IT Support & Troubleshooting</li>
-        <li>Python & Data Analysis</li>
-        <li>Power BI</li>
-        <li>Cybersecurity Fundamentals</li>
-        <li>Database Management</li>
-        <li>Microsoft Office & Cloud Tools</li>
-      </ul>
-
-    </div>
-
-    <div class="card">
-
-      <h2>Professional Profiles</h2>
-
-      <p>
-        <a href="https://linkedin.com/in/bilal-Abdulkadir" target="_blank">
-          LinkedIn
-        </a>
-      </p>
-
-      <p>
-        <a href="https://github.com/Bilalabdulkadir" target="_blank">
-          GitHub
-        </a>
-      </p>
-
-      <p>
-        <a href="https://learn.microsoft.com/en-us/users/MuhammedBilal-0049" target="_blank">
-          Microsoft Learn
-        </a>
-      </p>
-
-    </div>
-
-    <a class="back" href="index.html">← Back to Home</a>
-
+  <div class="card">
+    <h2>Professional Summary</h2>
+    <p>
+      IT Support Specialist with experience in troubleshooting, cybersecurity, and data analysis.
+    </p>
   </div>
+
+  <div class="card">
+    <h2>Education</h2>
+    <p>B.Sc. in Information Technology — Jimma University (2019)</p>
+  </div>
+
+  <div class="card">
+    <h2>Certifications</h2>
+    <ul>
+      <li>OPSWAT Critical Infrastructure Protection</li>
+      <li>Microsoft Learn Data Analysis</li>
+      <li>Cybersecurity Simulation (Forage)</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Bilal Abdulkadir Muhammed</p>
+</footer>
 
 </body>
 </html>
