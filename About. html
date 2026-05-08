@@ -2,105 +2,209 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Bilal Abdulkadir Muhammed</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      line-height: 1.6;
-    }
+<title>Bilal Abdulkadir Muhammed | IT Support CV</title>
 
-    header {
-      background: #1e3a8a;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    nav {
-      background: #2563eb;
-      text-align: center;
-      padding: 10px;
-    }
+<style>
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+}
 
-    .container {
-      width: 85%;
-      margin: auto;
-      padding: 20px;
-    }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #020617;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    z-index: 1000;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-    }
+nav a {
+    color: #38bdf8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
 
-    h1, h2 {
-      color: #1e3a8a;
-    }
+header {
+    text-align: center;
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, #020617, #1e293b);
+}
 
-    footer {
-      text-align: center;
-      background: #1e3a8a;
-      color: white;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
-  <h1>About Me</h1>
-</header>
-
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<div class="container">
+<header id="home">
 
-  <div class="card">
-    <h2>Professional Summary</h2>
-    <p>
-      IT Support Specialist with experience in troubleshooting, cybersecurity, and data analysis.
-    </p>
-  </div>
+    <h1>Bilal Abdulkadir Muhammed</h1>
+    <p>IT Support Specialist | Data Analyst | Cybersecurity Enthusiast</p>
 
-  <div class="card">
-    <h2>Education</h2>
-    <p>B.Sc. in Information Technology — Jimma University (2019)</p>
-  </div>
+    <a class="btn" href="Bilal_Abdulkadir_CV.pdf" download>Download CV</a>
 
-  <div class="card">
+</header>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="card">
+        IT Support Specialist with experience in troubleshooting, system maintenance,
+        cybersecurity fundamentals, and data analysis. Focused on delivering efficient
+        IT solutions and improving system performance.
+    </div>
+
+</section>
+
+<section id="experience">
+
+    <h2>Experience</h2>
+
+    <div class="card">
+        <b>IT Support Specialist – Star Development Association (2022–2025)</b>
+        <ul>
+            <li>Provided IT support and troubleshooting</li>
+            <li>Managed systems, networks, and user accounts</li>
+            <li>Supported cybersecurity and backups</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <b>Database Entry Officer – Dera City Administration (2020–2022)</b>
+        <ul>
+            <li>Managed municipal database systems</li>
+            <li>Ensured data accuracy and validation</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="card">
+        IT Support • Networking • Cybersecurity • Python • Power BI • Data Analysis • Database Management
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="card">
+        IT Support Data Analysis – Python & Power BI dashboards for ticket analysis
+    </div>
+
+    <div class="card">
+        Cybersecurity Risk Simulation – Risk analysis and vulnerability assessment
+    </div>
+
+    <div class="card">
+        Cloud Collaboration Project – Google Drive + AI tools workflow optimization
+    </div>
+
+</section>
+
+<section id="certifications">
+
     <h2>Certifications</h2>
-    <ul>
-      <li>OPSWAT Critical Infrastructure Protection</li>
-      <li>Microsoft Learn Data Analysis</li>
-      <li>Cybersecurity Simulation (Forage)</li>
-    </ul>
-  </div>
 
-</div>
+    <div class="card">
+        CompTIA Security+ • Microsoft Learn (Data & Power BI) • OPSWAT CIP • Forage Cybersecurity Simulation
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="card">
+        Email: bilalabdulkadir286@gmail.com <br><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/bilalabdulkadir">Profile</a><br>
+        GitHub: <a href="https://github.com/Bilalabdulkadir">Profile</a>
+    </div>
+
+</section>
 
 <footer>
-  <p>© 2026 Bilal Abdulkadir Muhammed</p>
+    © 2026 Bilal Abdulkadir Muhammed | IT Support CV Website
 </footer>
 
 </body>
