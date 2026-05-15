@@ -1,246 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal Abdulkadir | IT Support Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<title>Bilal Abdulkadir Muhammed | IT Support Portfolio</title>
+        html {
+            scroll-behavior: smooth;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
 
-<style>
+        header {
+            background: linear-gradient(135deg, #020617, #1e293b);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+        }
 
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background: #0f172a;
-    color: #e2e8f0;
-}
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #38bdf8;
+            font-weight: 700;
+        }
 
-header {
-    background: linear-gradient(135deg, #020617, #1e293b);
-    padding: 70px 20px;
-    text-align: center;
-}
+        header p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
 
-header h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-}
+        nav {
+            text-align: center;
+            background: #020617;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
 
-header p {
-    color: #94a3b8;
-}
+        nav a {
+            color: #38bdf8;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
 
-nav {
-    text-align: center;
-    background: #020617;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-}
+        nav a:hover {
+            color: #0ea5e9;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+            transform: translateY(-2px);
+        }
 
-nav a {
-    color: #38bdf8;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 500;
-}
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #38bdf8;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 15px;
+        }
 
-h2 {
-    color: #38bdf8;
-    margin-bottom: 15px;
-}
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
 
-.card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-}
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(56, 189, 248, 0.15);
+            background: #334155;
+        }
 
-ul {
-    line-height: 1.8;
-}
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
 
-button {
-    padding: 12px 18px;
-    background: #38bdf8;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
 
-button:hover {
-    background: #0ea5e9;
-}
+        .card li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #cbd5e1;
+        }
 
-a {
-    color: #38bdf8;
-}
+        .card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #38bdf8;
+            font-weight: bold;
+        }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
-    margin-top: 40px;
-}
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
 
-</style>
+        button {
+            padding: 12px 30px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 5px;
+            color: #020617;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
 
+        button:hover {
+            background: #0ea5e9;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .contact-link {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: #0ea5e9;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            background: #020617;
+            padding: 30px 20px;
+            margin-top: 60px;
+            color: #94a3b8;
+            font-size: 0.95rem;
+            border-top: 2px solid #38bdf8;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #38bdf8;
+        }
+
+        .skill-item h4 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project-card {
+            background: #0f172a;
+            border: 1px solid #38bdf8;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav {
+                padding: 15px;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+
+            section {
+                padding: 30px 10px;
+            }
+
+            section h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Bilal Abdulkadir Muhammed</h1>
+        <p>IT Support Specialist | Data Analyst | Cybersecurity Enthusiast</p>
+        <a href="Bilal_Abdulkadir_CV.pdf" download>
+            <button>Download CV</button>
+        </a>
+    </header>
 
-<header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <h1>Bilal Abdulkadir Muhammed</h1>
-    <p>IT Support Specialist | Data Analyst | Cybersecurity Enthusiast</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <div class="about-content">
+                <p>I am an experienced IT Support Specialist with a passion for diagnosing and resolving technical issues efficiently. With hands-on experience in Windows troubleshooting, networking, cybersecurity fundamentals, and data analysis, I pride myself on delivering quick and effective solutions to minimize downtime and keep systems running smoothly.</p>
+                <p>My expertise spans from hardware maintenance to complex network configuration issues, complemented by data analysis skills using Python and Power BI. I am passionate about staying updated with the latest IT trends and continuously improving my technical skills to provide exceptional support and insights.</p>
+            </div>
+        </div>
+    </section>
 
-    <br>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>IT Support Specialist – Star Development Association (2022–2025)</h3>
+            <ul>
+                <li>Provided first & second-level IT support to end users</li>
+                <li>Resolved hardware, software, and network issues efficiently</li>
+                <li>Managed user accounts and system access controls</li>
+                <li>Supported cybersecurity and backup systems implementation</li>
+                <li>Maintained detailed documentation and knowledge base articles</li>
+            </ul>
+        </div>
 
-    <a href="Bilal_Abdulkadir_CV.pdf" download>
-        <button>Download CV</button>
-    </a>
+        <div class="card">
+            <h3>Database Entry Officer – Dera City Administration (2020–2022)</h3>
+            <ul>
+                <li>Managed and maintained municipal database records with precision</li>
+                <li>Ensured data accuracy and quality control standards</li>
+                <li>Supported digital registration systems and data migration</li>
+                <li>Collaborated with multiple departments on data management projects</li>
+            </ul>
+        </div>
+    </section>
 
-</header>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="card skill-item">
+                <h4>Operating Systems & Support</h4>
+                <ul>
+                    <li>Windows Troubleshooting</li>
+                    <li>System Configuration</li>
+                    <li>Hardware Maintenance</li>
+                    <li>IT Support & Help Desk</li>
+                </ul>
+            </div>
+            <div class="card skill-item">
+                <h4>Networking & Security</h4>
+                <ul>
+                    <li>IP Configuration & DNS</li>
+                    <li>WiFi Troubleshooting</li>
+                    <li>Network Diagnostics</li>
+                    <li>Cybersecurity Fundamentals</li>
+                </ul>
+            </div>
+            <div class="card skill-item">
+                <h4>Data Analysis & Tools</h4>
+                <ul>
+                    <li>Power BI & Microsoft Fabric</li>
+                    <li>Python Data Analysis</li>
+                    <li>Database Management</li>
+                    <li>Data Visualization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card project-card">
+            <h3>IT Support Data Analysis</h3>
+            <p>Analyzed IT support tickets and performance metrics using Python and Power BI to identify trends and improve response efficiency by 20%.</p>
+        </div>
 
-<section id="about">
+        <div class="card project-card">
+            <h3>Cybersecurity Risk Simulation</h3>
+            <p>Performed comprehensive risk assessment and vulnerability analysis using structured frameworks to identify and mitigate potential security threats.</p>
+        </div>
 
-    <h2>About Me</h2>
+        <div class="card project-card">
+            <h3>Cloud Collaboration Project</h3>
+            <p>Implemented Google Drive and AI-powered tools for workflow optimization, improving team collaboration and document management efficiency.</p>
+        </div>
+    </section>
 
-    <div class="card">
-        <p>
-            IT Support Specialist with experience in troubleshooting, system maintenance,
-            cybersecurity fundamentals, and data analysis. Passionate about solving technical
-            problems and improving IT systems efficiency.
-        </p>
-    </div>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="card">
+            <ul>
+                <li><strong>CompTIA Security+</strong> - In Progress (Expected 2026)</li>
+                <li><strong>Microsoft Learn</strong> – Data Analysis & Power BI</li>
+                <li><strong>OPSWAT</strong> – Critical Infrastructure Protection</li>
+                <li><strong>Forage Cyber Security Simulation</strong> – Cybersecurity Fundamentals</li>
+            </ul>
+        </div>
+    </section>
 
-</section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p><strong>Email:</strong> <a href="mailto:bilalabdulkadir286@gmail.com" class="contact-link">bilalabdulkadir286@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bilalabdulkadir" class="contact-link" target="_blank">linkedin.com/in/bilalabdulkadir</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Bilalabdulkadir" class="contact-link" target="_blank">github.com/Bilalabdulkadir</a></p>
+            <p style="margin-top: 20px; color: #94a3b8; font-size: 0.9rem;">Feel free to reach out for collaboration, questions, or opportunities!</p>
+        </div>
+    </section>
 
-<section id="experience">
-
-    <h2>Experience</h2>
-
-    <div class="card">
-        <h3>IT Support Specialist – Star Development Association (2022–2025)</h3>
-        <ul>
-            <li>Provided first & second-level IT support</li>
-            <li>Resolved hardware, software, and network issues</li>
-            <li>Managed user accounts and system access</li>
-            <li>Supported cybersecurity and backup systems</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Database Entry Officer – Dera City Administration (2020–2022)</h3>
-        <ul>
-            <li>Managed municipal database records</li>
-            <li>Ensured data accuracy and quality control</li>
-            <li>Supported digital registration systems</li>
-        </ul>
-    </div>
-
-</section>
-
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="card">
-        <ul>
-            <li>IT Support & Troubleshooting</li>
-            <li>Networking (IP, DNS, WiFi)</li>
-            <li>Cybersecurity Fundamentals</li>
-            <li>Python & Data Analysis</li>
-            <li>Power BI & Microsoft Fabric</li>
-            <li>Database Management</li>
-        </ul>
-    </div>
-
-</section>
-
-<section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>IT Support Data Analysis</h3>
-        <p>Analyzed IT support tickets using Python & Power BI to improve response efficiency.</p>
-    </div>
-
-    <div class="card">
-        <h3>Cybersecurity Risk Simulation</h3>
-        <p>Performed risk assessment and vulnerability analysis using structured frameworks.</p>
-    </div>
-
-    <div class="card">
-        <h3>Cloud Collaboration Project</h3>
-        <p>Used Google Drive and AI tools for workflow optimization and collaboration.</p>
-    </div>
-
-</section>
-
-<section id="certifications">
-
-    <h2>Certifications</h2>
-
-    <div class="card">
-        <ul>
-            <li>CompTIA Security+ (2026)</li>
-            <li>Microsoft Learn – Data Analysis & Power BI</li>
-            <li>OPSWAT Critical Infrastructure Protection</li>
-            <li>Forage Cyber Security Simulation</li>
-        </ul>
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <h2>Contact</h2>
-
-    <div class="card">
-        <p>Email: bilalabdulkadir286@gmail.com</p>
-
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/bilalabdulkadir" target="_blank">
-                linkedin.com/in/bilalabdulkadir
-            </a>
-        </p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/Bilalabdulkadir" target="_blank">
-                github.com/Bilalabdulkadir
-            </a>
-        </p>
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Bilal Abdulkadir Muhammed | IT Support Portfolio</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Bilal Abdulkadir Muhammed | IT Support Portfolio</p>
+    </footer>
 
 </body>
 </html>
