@@ -1,149 +1,823 @@
-Centennial College · Residence Scholarship · Fall 2026
-Bilal Abdulkadir Muhammed
-From Dera's databases to Canada's workplaces — building healthier systems, one record and one person at a time.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal Abdulkadir Muhammed · Centennial College 2026 Residence Scholarship</title>
+    <meta name="description" content="Personal scholarship portfolio for Bilal Abdulkadir Muhammed, incoming Centennial College student (Fall 2026), Workplace Wellness & Health Promotion.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1F3A5F;
+            --navy-deep: #0F1F3A;
+            --gold: #C9A227;
+            --gold-soft: #E8C766;
+            --ink: #1A1A1A;
+            --muted: #5A5A5A;
+            --paper: #FAF8F3;
+            --rule: #D6CFC0;
+        }
 
-Addis Ababa, Ethiopia
-Open to Relocation to Canada
-+251 941 322 948
-Read My Story
-← Main Portfolio
-Story
-Leadership
-Experience
-Projects
-Certifications
-Why Centennial
-References
-Contact
-Personal Statement
-The Day I Learned Systems Are Human
-Five years ago, on a Tuesday afternoon in Dera, I sat beside a 58-year-old woman named Tigist who had been waiting three hours to renew her municipal ID. The database was down — again. As the Data Entry & Database Support Officer, I knew the problem was not the server. It was a workflow no one had ever questioned.
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+        }
 
-I spent the next two weeks mapping the process, standardizing input fields, and training two colleagues. Within a month, duplicate records had fallen by 40%, and Tigist's daughter was able to register her newborn in under twenty minutes.
+        /* ---------- HERO ---------- */
+        .hero {
+            background:
+                linear-gradient(180deg, rgba(15,31,58,0.92), rgba(31,58,95,0.96)),
+                radial-gradient(circle at 20% 0%, #2a4a78 0%, #0f1f3a 70%);
+            color: #f5f1e6;
+            padding: 100px 24px 80px;
+            text-align: center;
+            border-bottom: 4px solid var(--gold);
+        }
+        .hero .eyebrow {
+            font-size: 0.78rem;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--gold-soft);
+            margin-bottom: 22px;
+            font-weight: 500;
+        }
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.02em;
+            margin-bottom: 18px;
+            line-height: 1.15;
+        }
+        .hero .subhead {
+            font-size: 1.15rem;
+            color: #d4cdb8;
+            max-width: 640px;
+            margin: 0 auto 32px;
+            font-weight: 300;
+        }
+        .hero .meta {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 22px;
+            font-size: 0.88rem;
+            color: #c9c2ad;
+            margin-bottom: 32px;
+        }
+        .hero .meta span::before {
+            content: "·";
+            margin-right: 22px;
+            color: var(--gold);
+        }
+        .hero .meta span:first-child::before { content: ""; margin: 0; }
 
-"That day taught me something I carry into every project I touch: systems are never just technical. They are human."
-— Bilal Abdulkadir, Dera City, 2020
-That belief is what brings me to Centennial College. For six years I have worked at the intersection of technology and people — first as a database officer serving 50,000+ municipal records, then as an IT Support Specialist where I resolved 95% of tickets within SLA and mentored more than ten colleagues through their growth. The work was deeply satisfying, and it was not enough.
+        .hero .cta-row {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            font-size: 0.88rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            padding: 13px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: var(--gold);
+            color: var(--navy-deep);
+        }
+        .btn-primary:hover {
+            background: var(--gold-soft);
+            transform: translateY(-1px);
+        }
+        .btn-ghost {
+            background: transparent;
+            color: #f5f1e6;
+            border: 1px solid rgba(245,241,230,0.3);
+        }
+        .btn-ghost:hover {
+            border-color: var(--gold);
+            color: var(--gold-soft);
+        }
 
-Every ticket, every data field, every system I built was ultimately a question of wellbeing: was this person able to do their job without burning out? Was this family able to access the service they needed? Was this workplace actually well, or merely functional? I want to move closer to those questions. The Workplace Wellness and Health Promotion program at Centennial is the bridge I have been looking for — a chance to pair my analytical mindset and operational experience with formal training in mental health, occupational health, and the design of healthier workplaces.
+        /* ---------- NAV ---------- */
+        nav {
+            background: #fff;
+            border-bottom: 1px solid var(--rule);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        nav .inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px 28px;
+        }
+        nav a {
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--navy);
+            text-decoration: none;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        nav a:hover { border-color: var(--gold); }
 
-Relocating from Addis Ababa to Canada is not a small step, and I do not approach it lightly. I have spent the past year preparing — earning certifications in cloud computing, cybersecurity infrastructure, emotional intelligence, and hospitality practice. Each one was a deliberate signal to myself that the next chapter requires more than technical skill. It requires the ability to read a room, to listen across cultures, and to lead with care.
+        /* ---------- LAYOUT ---------- */
+        main { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 72px 0 32px; }
+        section + section { border-top: 1px solid var(--rule); }
 
-Leadership Essay
-What a Fragmented Database Taught Me About People
-The Role: Front Line of Public Service
-Dera City Administration · 2020 – 2022
-As Data Entry & Database Support Officer, my role was, on paper, narrow: enter records, verify them, keep the system running. In practice, I was standing at the front line of a city trying to serve tens of thousands of residents through a paper-and-spreadsheet system that was buckling under its own weight. I came to understand, very quickly, that the smallest typo on my end could become a three-hour wait for a citizen at the front counter.
+        .section-label {
+            font-size: 0.72rem;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 24px;
+            letter-spacing: -0.01em;
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 3px;
+            background: var(--gold);
+            margin-top: 14px;
+        }
 
-The Evolution: Earned, Not Assigned
-Within the first year
-I was appointed on the strength of my IT background, but the leadership part was not assigned — it was earned. Within my first year, my supervisor began routing newer colleagues to me for guidance. What started as informal shoulder-to-shoulder help became structured training: I led sessions on new digital registration forms, walked team members through verification protocols, and served as the bridge between the technical side of the system and the administrative staff who used it every day.
+        p { margin-bottom: 18px; }
+        p.lead {
+            font-size: 1.12rem;
+            line-height: 1.75;
+            color: var(--ink);
+            font-weight: 400;
+        }
 
-The Result: 40% Fewer Duplicates, 99% Accuracy
-Team-wide digital transformation
-The team set a simple goal: move from manual, error-prone records to a reliable digital database. I led the design of standardized data entry protocols, implemented new digital registration forms, and embedded verification steps at the point of entry rather than after the fact. The result: a measurable reduction in entry errors, a streamlined workflow for the entire administrative team, and accurate citizen profiles that allowed public services to be delivered faster and more reliably.
+        /* ---------- PULL QUOTE ---------- */
+        .pullquote {
+            font-size: 1.35rem;
+            font-weight: 300;
+            line-height: 1.5;
+            color: var(--navy);
+            border-left: 4px solid var(--gold);
+            padding: 8px 0 8px 28px;
+            margin: 36px 0;
+        }
+        .pullquote cite {
+            display: block;
+            margin-top: 12px;
+            font-style: normal;
+            font-size: 0.82rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            font-weight: 500;
+        }
 
-The Setback: The Audit Nobody Wanted
-Mid-project
-The most difficult stretch came when we surfaced the scale of the problem we had inherited: fragmented, incomplete, and sometimes contradictory resident records accumulating for years. The team was demoralized, and there was real resistance to the additional work a full audit would require. I responded by initiating a structured data audit, building a simple verification checklist, and sitting with colleagues one-on-one to walk through the inconsistencies we were finding. Leadership, I learned, is rarely about a clean plan — it is about doing the slow, unglamorous work of bringing people with you.
+        /* ---------- CARDS / GRID ---------- */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-top: 3px solid var(--gold);
+            padding: 24px;
+            border-radius: 2px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(31,58,95,0.08);
+        }
+        .card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 6px;
+        }
+        .card .when {
+            font-size: 0.8rem;
+            color: var(--muted);
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card li {
+            font-size: 0.96rem;
+            padding: 4px 0 4px 18px;
+            position: relative;
+            color: #333;
+        }
+        .card li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
 
-The Lesson: Buy-In Earlier Would Have Saved Weeks
-Looking back
-Looking back, the most important lesson is that technical skill is necessary but never sufficient. Knowing how to design a database does not by itself change an organization. What changes an organization is the ability to communicate clearly, to listen to resistance rather than override it, and to build consensus around a better way of working. If I could lead this initiative again, I would have introduced collaborative training sessions from day one. Buy-in earlier would have saved us weeks of friction.
+        /* ---------- TAG LIST (certs / skills) ---------- */
+        .tag-group { margin-top: 18px; }
+        .tag-group h4 {
+            font-size: 0.78rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--navy);
+            margin: 18px 0 10px;
+            font-weight: 600;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            font-size: 0.82rem;
+            padding: 6px 12px;
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-left: 3px solid var(--gold);
+            color: var(--ink);
+        }
 
-Professional Experience
-Six Years at the Intersection of Tech and People
-IT Support Specialist
-Star Development Association, Ethiopia · 2022 – 2025
-Resolved 95% of technical support tickets within SLA timelines, reducing operational downtime by 15%.
-Mentored 10+ staff members on troubleshooting best practices, strengthening team capability and service consistency.
-Managed user accounts, system access controls, and cybersecurity & backup systems.
-Maintained detailed documentation and knowledge-base articles for organizational continuity.
-Data Entry & Database Support Officer
-Dera City Administration, Ethiopia · 2020 – 2022
-Validated and maintained 50,000+ records with 99% accuracy across municipal databases.
-Improved data quality controls, reducing duplicate records by 40%.
-Led the design and rollout of standardized digital registration forms city-wide.
-Supported digital registration systems, data migration, and cross-department collaboration.
-Community & Leadership
-Volunteer Computer Tutor · 2014–2019
-Digital literacy for elders & neighbours
-Cross-cultural bridge-builder
-Key Projects
-Selected Work
-IT Support Data Analysis
-Python · Power BI
-Analyzed IT support tickets and performance metrics to identify trends and bottlenecks.
-Improved response efficiency by 20% through data-driven recommendations.
-Power BI Dashboarding
-Microsoft Power BI
-Designed interactive dashboards to monitor operational performance.
-Enabled leadership to act on real-time, visual KPIs.
-Cybersecurity Risk Simulation
-Forage · OPSWAT
-Conducted comprehensive risk assessment and vulnerability analysis using structured frameworks.
-Recommended and documented mitigation strategies.
-Cloud Collaboration
-Google Drive · AI tools
-Implemented Google Drive and AI-powered workflows for team collaboration.
-Improved document management and team efficiency across departments.
-Continuous Learning
-Certifications & Professional Development
-Cloud & AI
-AWS AI Practitioner Challenge · Udacity
-Gemini in Google Drive · Udacity
-Describe Cloud Computing · Microsoft
-Cybersecurity & Infrastructure
-CompTIA Security+ (SY0-701) · Cyberinterview Prep
-Introduction to Critical Infrastructure Protection · OPSWAT
-Cyber Security Operations Job Simulation · Forage
-Data & Business Intelligence
-Power BI · Microsoft
-Copilot in Power BI · Microsoft
-Microsoft Fabric Analytics · Microsoft
-Data Analysis Fundamentals · Microsoft
-Data Analysis & Storytelling · Springpod
-Professional Skills
-Developing Emotional Intelligence · Saint Louis University
-Maze 101: Getting Started with Maze · Maze University
-Hospitality Work Experience · Springpod / Marriott Bonvoy
-Residence Community Commitment
-What I Will Bring to Centennial
-If I am fortunate enough to receive this scholarship, I will bring the same orientation to the residence community that I have brought to every workplace and volunteer role: a deep belief that systems — whether a database, a help desk, or a residence hall — are, at their core, a collection of human beings trying to do well by one another.
+        /* ---------- TIMELINE ---------- */
+        .timeline {
+            margin-top: 24px;
+            border-left: 2px solid var(--gold);
+            padding-left: 28px;
+        }
+        .tl-item {
+            position: relative;
+            padding-bottom: 28px;
+        }
+        .tl-item::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            background: var(--gold);
+            border-radius: 50%;
+            border: 3px solid var(--paper);
+            box-shadow: 0 0 0 1px var(--gold);
+        }
+        .tl-item h3 {
+            font-size: 1.1rem;
+            color: var(--navy);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .tl-item .when {
+            font-size: 0.8rem;
+            color: var(--muted);
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .tl-item p { font-size: 0.97rem; color: #333; }
 
-I have been a Volunteer Computer Tutor since 2014, teaching digital literacy to neighbours and elders who had been left behind by the rapid spread of mobile technology. I know what it feels like to be the person in the room who does not yet speak the language of a new system, and I know the dignity of being helped without condescension. I want to be that person for incoming students at Centennial — someone who helps a first-generation international student navigate the student portal, who organizes a peer wellness check-in during exam season, or who simply listens when homesickness arrives unannounced.
+        /* ---------- REFERENCES ---------- */
+        .ref-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            padding: 20px 24px;
+            margin-bottom: 14px;
+        }
+        .ref-card h3 {
+            font-size: 1.02rem;
+            color: var(--navy);
+            font-weight: 600;
+        }
+        .ref-card .title {
+            font-size: 0.92rem;
+            color: var(--muted);
+            margin: 4px 0 8px;
+        }
+        .ref-card .rel {
+            font-size: 0.92rem;
+            color: #333;
+        }
+        .ref-card .contact {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 8px;
+        }
+        .ref-card .contact .placeholder {
+            color: var(--gold);
+            font-style: italic;
+        }
 
-"Centennial's mission is to cultivate graduates who are not only professionally capable but also community-minded. I want to be one of those graduates."
-Centennial's mission is to cultivate graduates who are not only professionally capable but also community-minded. I want to enter the workforce in Canada with the technical fluency I have built over six years, the wellness training Centennial will give me, and the lived understanding that every system is, ultimately, human. Thank you for considering my application. I will work hard to make this investment worth your faith.
+        /* ---------- FOOTER ---------- */
+        footer {
+            background: var(--navy-deep);
+            color: #c9c2ad;
+            padding: 40px 24px;
+            text-align: center;
+            margin-top: 80px;
+            border-top: 4px solid var(--gold);
+        }
+        footer p {
+            font-size: 0.85rem;
+            margin: 4px 0;
+        }
+        footer a {
+            color: var(--gold-soft);
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        footer a:hover { text-decoration: underline; }
 
-References
-People Who Can Speak to My Work
-Abdurezak Jeylan Abdulkadir CONFIRMED
-General Manager, Star Development Association (SDA), Dera, Ethiopia
-Direct organizational head; signed my Experience Letter (Ref. SDA/EXPOS/25, dated 30/12/2025) confirming my role as IT Service Support Officer (2022–2025) and my contributions to IT support, systems, and project operations.
-Email: Star3545@gmail.com (SDA organizational)  ·  Phone: +251 945 332 535 (SDA office)
-Saladin Musa CONFIRMED
-Lecturer and Researcher, Konbolcha Institute of Technology (former of Jimma University)
-Academic reference; can speak to scholarly aptitude, training, and growth in Information Technology.
-Email: Salahadin.seid@kiot.edu.et  ·  Phone: +251 912 274 777  ·  P.O. Box 378
-Kebebew Ababu, M.Sc. CONFIRMED
-Lecturer, Jimma Institute of Technology
-Academic reference from the institution where I completed my B.Sc. in IT; can speak to academic performance and readiness for postgraduate study.
-Email: Kebebew.ababu@ju.edu.et  ·  Phone: +251 913 774 808  ·  P.O. Box 378
-Additional references and letters of recommendation available on request.
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 720px) {
+            .hero { padding: 64px 20px 56px; }
+            section { padding: 48px 0 24px; }
+            h2 { font-size: 1.5rem; }
+            .pullquote { font-size: 1.15rem; padding-left: 20px; }
+            nav .inner { gap: 4px 18px; }
+            nav a { font-size: 0.74rem; }
+        }
 
-Get in Touch
-Contact
-Direct
-Email: bilalabdulkadir286@gmail.com
-Phone: +251 941 322 948
-Location: Addis Ababa, Ethiopia · Open to Relocation to Canada
-Online
-LinkedIn: linkedin.com/in/bilalabdulkadir
-GitHub: github.com/Bilalabdulkadir
-Main Portfolio: bilalabdulkadir.github.io
-Bilal Abdulkadir Muhammed · Centennial College 2026 Residence Scholarship
+        /* === Script-driven enhancements === */
+        #read-progress {
+            position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+            background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+            z-index: 1000; transition: width 0.1s linear;
+        }
+        nav.nav-scrolled {
+            box-shadow: 0 2px 14px rgba(15, 31, 58, 0.08);
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: saturate(140%) blur(6px);
+        }
+        nav a.is-active {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+        .reveal {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            will-change: opacity, transform;
+        }
+        .reveal.is-visible { opacity: 1; transform: none; }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            #read-progress { transition: none; }
+        }
+    </style>
+</head>
+<body>
 
-© 2026 · Scholarship Portfolio Page
+<!-- ============== HERO ============== -->
+<header class="hero">
+    <div class="eyebrow">Centennial College · Residence Scholarship · Fall 2026</div>
+    <h1>Bilal Abdulkadir Muhammed</h1>
+    <p class="subhead">From Dera's databases to Canada's workplaces — building healthier systems, one record and one person at a time.</p>
+    <div class="meta">
+        <span>Addis Ababa, Ethiopia</span>
+        <span>Open to Relocation to Canada</span>
+        <span>+251 941 322 948</span>
+    </div>
+    <div class="cta-row">
+        <a href="#story" class="btn btn-primary">Read My Story</a>
+        <a href="https://bilalabdulkadir.github.io" class="btn btn-ghost">← Main Portfolio</a>
+    </div>
+</header>
 
-Main Portfolio· Email· LinkedIn· GitHub
+<!-- ============== NAV ============== -->
+<nav>
+    <div class="inner">
+        <a href="#story">Story</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#centennial">Why Centennial</a>
+        <a href="#references">References</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<main>
+
+<!-- ============== STORY ============== -->
+<section id="story">
+    <div class="section-label">Personal Statement</div>
+    <h2>The Day I Learned Systems Are Human</h2>
+    <p class="lead">Five years ago, on a Tuesday afternoon in Dera, I sat beside a 58-year-old woman named Tigist who had been waiting three hours to renew her municipal ID. The database was down — again. As the Data Entry &amp; Database Support Officer, I knew the problem was not the server. It was a workflow no one had ever questioned.</p>
+
+    <p>I spent the next two weeks mapping the process, standardizing input fields, and training two colleagues. Within a month, duplicate records had fallen by 40%, and Tigist's daughter was able to register her newborn in under twenty minutes.</p>
+
+    <div class="pullquote">
+        "That day taught me something I carry into every project I touch: systems are never just technical. They are human."
+        <cite>— Bilal Abdulkadir, Dera City, 2020</cite>
+    </div>
+
+    <p>That belief is what brings me to Centennial College. For six years I have worked at the intersection of technology and people — first as a database officer serving 50,000+ municipal records, then as an IT Support Specialist where I resolved 95% of tickets within SLA timelines and mentored more than ten colleagues through their growth. The work was deeply satisfying, and it was not enough.</p>
+
+    <p>Every ticket, every data field, every system I built was ultimately a question of wellbeing: was this person able to do their job without burning out? Was this family able to access the service they needed? Was this workplace actually well, or merely functional? I want to move closer to those questions. The <strong>Workplace Wellness and Health Promotion</strong> program at Centennial is the bridge I have been looking for — a chance to pair my analytical mindset and operational experience with formal training in mental health, occupational health, and the design of healthier workplaces.</p>
+
+    <p>Relocating from Addis Ababa to Canada is not a small step, and I do not approach it lightly. I have spent the past year preparing — earning certifications in cloud computing, cybersecurity infrastructure, emotional intelligence, and hospitality practice. Each one was a deliberate signal to myself that the next chapter requires more than technical skill. It requires the ability to read a room, to listen across cultures, and to lead with care.</p>
+</section>
+
+<!-- ============== LEADERSHIP ============== -->
+<section id="leadership">
+    <div class="section-label">Leadership Essay</div>
+    <h2>What a Fragmented Database Taught Me About People</h2>
+
+    <div class="timeline">
+        <div class="tl-item">
+            <h3>The Role: Front Line of Public Service</h3>
+            <div class="when">Dera City Administration · 2020 – 2022</div>
+            <p>As Data Entry &amp; Database Support Officer, my role was, on paper, narrow: enter records, verify them, keep the system running. In practice, I was standing at the front line of a city trying to serve tens of thousands of residents through a paper-and-spreadsheet system that was buckling under its own weight. I came to understand, very quickly, that the smallest typo on my end could become a three-hour wait for a citizen at the front counter.</p>
+        </div>
+
+        <div class="tl-item">
+            <h3>The Evolution: Earned, Not Assigned</h3>
+            <div class="when">Within the first year</div>
+            <p>I was appointed on the strength of my IT background, but the leadership part was not assigned — it was earned. Within my first year, my supervisor began routing newer colleagues to me for guidance. What started as informal shoulder-to-shoulder help became structured training: I led sessions on new digital registration forms, walked team members through verification protocols, and served as the bridge between the technical side of the system and the administrative staff who used it every day.</p>
+        </div>
+
+        <div class="tl-item">
+            <h3>The Result: 40% Fewer Duplicates, 99% Accuracy</h3>
+            <div class="when">Team-wide digital transformation</div>
+            <p>The team set a simple goal: move from manual, error-prone records to a reliable digital database. I led the design of standardized data entry protocols, implemented new digital registration forms, and embedded verification steps at the point of entry rather than after the fact. The result: a measurable reduction in entry errors, a streamlined workflow for the entire administrative team, and accurate citizen profiles that allowed public services to be delivered faster and more reliably.</p>
+        </div>
+
+        <div class="tl-item">
+            <h3>The Setback: The Audit Nobody Wanted</h3>
+            <div class="when">Mid-project</div>
+            <p>The most difficult stretch came when we surfaced the scale of the problem we had inherited: fragmented, incomplete, and sometimes contradictory resident records accumulating for years. The team was demoralized, and there was real resistance to the additional work a full audit would require. I responded by initiating a structured data audit, building a simple verification checklist, and sitting with colleagues one-on-one to walk through the inconsistencies we were finding. Leadership, I learned, is rarely about a clean plan — it is about doing the slow, unglamorous work of bringing people with you.</p>
+        </div>
+
+        <div class="tl-item">
+            <h3>The Lesson: Buy-In Earlier Would Have Saved Weeks</h3>
+            <div class="when">Looking back</div>
+            <p>Looking back, the most important lesson is that technical skill is necessary but never sufficient. Knowing how to design a database does not by itself change an organization. What changes an organization is the ability to communicate clearly, to listen to resistance rather than override it, and to build consensus around a better way of working. If I could lead this initiative again, I would have introduced collaborative training sessions from day one. Buy-in earlier would have saved us weeks of friction.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============== EXPERIENCE ============== -->
+<section id="experience">
+    <div class="section-label">Professional Experience</div>
+    <h2>Six Years at the Intersection of Tech and People</h2>
+
+    <div class="grid-2">
+        <div class="card">
+            <h3>IT Support Specialist</h3>
+            <div class="when">Star Development Association, Ethiopia · 2022 – 2025</div>
+            <ul>
+                <li>Resolved 95% of technical support tickets within SLA timelines, reducing operational downtime by 15%.</li>
+                <li>Mentored 10+ staff members on troubleshooting best practices, strengthening team capability and service consistency.</li>
+                <li>Managed user accounts, system access controls, and cybersecurity &amp; backup systems.</li>
+                <li>Maintained detailed documentation and knowledge-base articles for organizational continuity.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Data Entry &amp; Database Support Officer</h3>
+            <div class="when">Dera City Administration, Ethiopia · 2020 – 2022</div>
+            <ul>
+                <li>Validated and maintained 50,000+ records with 99% accuracy across municipal databases.</li>
+                <li>Improved data quality controls, reducing duplicate records by 40%.</li>
+                <li>Led the design and rollout of standardized digital registration forms city-wide.</li>
+                <li>Supported digital registration systems, data migration, and cross-department collaboration.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tag-group">
+        <h4>Community &amp; Leadership</h4>
+        <div class="tag-list">
+            <span class="tag">Volunteer Computer Tutor · 2014–2019</span>
+            <span class="tag">Digital literacy for elders &amp; neighbours</span>
+            <span class="tag">Cross-cultural bridge-builder</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============== PROJECTS ============== -->
+<section id="projects">
+    <div class="section-label">Key Projects</div>
+    <h2>Selected Work</h2>
+
+    <div class="grid-2">
+        <div class="card">
+            <h3>IT Support Data Analysis</h3>
+            <div class="when">Python · Power BI</div>
+            <ul>
+                <li>Analyzed IT support tickets and performance metrics to identify trends and bottlenecks.</li>
+                <li>Improved response efficiency by 20% through data-driven recommendations.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Power BI Dashboarding</h3>
+            <div class="when">Microsoft Power BI</div>
+            <ul>
+                <li>Designed interactive dashboards to monitor operational performance.</li>
+                <li>Enabled leadership to act on real-time, visual KPIs.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Cybersecurity Risk Simulation</h3>
+            <div class="when">Forage · OPSWAT</div>
+            <ul>
+                <li>Conducted comprehensive risk assessment and vulnerability analysis using structured frameworks.</li>
+                <li>Recommended and documented mitigation strategies.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Cloud Collaboration</h3>
+            <div class="when">Google Drive · AI tools</div>
+            <ul>
+                <li>Implemented Google Drive and AI-powered workflows for team collaboration.</li>
+                <li>Improved document management and team efficiency across departments.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============== CERTIFICATIONS ============== -->
+<section id="certifications">
+    <div class="section-label">Continuous Learning</div>
+    <h2>Certifications &amp; Professional Development</h2>
+
+    <div class="tag-group">
+        <h4>Cloud &amp; AI</h4>
+        <div class="tag-list">
+            <span class="tag">AWS AI Practitioner Challenge · Udacity</span>
+            <span class="tag">Gemini in Google Drive · Udacity</span>
+            <span class="tag">Describe Cloud Computing · Microsoft</span>
+        </div>
+    </div>
+
+    <div class="tag-group">
+        <h4>Cybersecurity &amp; Infrastructure</h4>
+        <div class="tag-list">
+            <span class="tag">CompTIA Security+ (SY0-701) · Cyberinterview Prep</span>
+            <span class="tag">Introduction to Critical Infrastructure Protection · OPSWAT</span>
+            <span class="tag">Cyber Security Operations Job Simulation · Forage</span>
+        </div>
+    </div>
+
+    <div class="tag-group">
+        <h4>Data &amp; Business Intelligence</h4>
+        <div class="tag-list">
+            <span class="tag">Power BI · Microsoft</span>
+            <span class="tag">Copilot in Power BI · Microsoft</span>
+            <span class="tag">Microsoft Fabric Analytics · Microsoft</span>
+            <span class="tag">Data Analysis Fundamentals · Microsoft</span>
+            <span class="tag">Data Analysis &amp; Storytelling · Springpod</span>
+        </div>
+    </div>
+
+    <div class="tag-group">
+        <h4>Professional Skills</h4>
+        <div class="tag-list">
+            <span class="tag">Developing Emotional Intelligence · Saint Louis University</span>
+            <span class="tag">Maze 101: Getting Started with Maze · Maze University</span>
+            <span class="tag">Hospitality Work Experience · Springpod / Marriott Bonvoy</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============== WHY CENTENNIAL ============== -->
+<section id="centennial">
+    <div class="section-label">Residence Community Commitment</div>
+    <h2>What I Will Bring to Centennial</h2>
+
+    <p>If I am fortunate enough to receive this scholarship, I will bring the same orientation to the residence community that I have brought to every workplace and volunteer role: a deep belief that systems — whether a database, a help desk, or a residence hall — are, at their core, a collection of human beings trying to do well by one another.</p>
+
+    <p>I have been a Volunteer Computer Tutor since 2014, teaching digital literacy to neighbours and elders who had been left behind by the rapid spread of mobile technology. I know what it feels like to be the person in the room who does not yet speak the language of a new system, and I know the dignity of being helped without condescension. I want to be that person for incoming students at Centennial — someone who helps a first-generation international student navigate the student portal, who organizes a peer wellness check-in during exam season, or who simply listens when homesickness arrives unannounced.</p>
+
+    <div class="pullquote">
+        "Centennial's mission is to cultivate graduates who are not only professionally capable but also community-minded. I want to be one of those graduates."
+    </div>
+
+    <p>Centennial's mission is to cultivate graduates who are not only professionally capable but also community-minded. I want to enter the workforce in Canada with the technical fluency I have built over six years, the wellness training Centennial will give me, and the lived understanding that every system is, ultimately, human. Thank you for considering my application. I will work hard to make this investment worth your faith.</p>
+</section>
+
+<!-- ============== REFERENCES ============== -->
+<section id="references">
+    <div class="section-label">References</div>
+    <h2>People Who Can Speak to My Work</h2>
+
+    <div class="ref-card">
+        <h3>Abdurezak Jeylan Abdulkadir <span style="font-size:0.78rem;background:var(--gold);color:var(--navy-deep);padding:2px 8px;margin-left:8px;letter-spacing:0.05em;font-weight:600;">CONFIRMED</span></h3>
+        <div class="title">General Manager, Star Development Association (SDA), Dera, Ethiopia</div>
+        <div class="rel">Direct organizational head; signed my Experience Letter (Ref. <strong>SDA/EXPOS/25</strong>, dated <strong>30/12/2025</strong>) confirming my role as IT Service Support Officer (2022–2025) and my contributions to IT support, systems, and project operations.</div>
+        <div class="contact">Email: Star3545@gmail.com (SDA organizational) &nbsp;·&nbsp; Phone: +251 945 332 535 (SDA office)</div>
+    </div>
+
+    <div class="ref-card">
+        <h3>Saladin Musa <span style="font-size:0.78rem;background:var(--gold);color:var(--navy-deep);padding:2px 8px;margin-left:8px;letter-spacing:0.05em;font-weight:600;">CONFIRMED</span></h3>
+        <div class="title">Lecturer and Researcher, Konbolcha Institute of Technology (former of Jimma University)</div>
+        <div class="rel">Academic reference; can speak to scholarly aptitude, training, and growth in Information Technology.</div>
+        <div class="contact">Email: Salahadin.seid@kiot.edu.et &nbsp;·&nbsp; Phone: +251 912 274 777 &nbsp;·&nbsp; P.O. Box 378</div>
+    </div>
+
+    <div class="ref-card">
+        <h3>Kebebew Ababu, M.Sc. <span style="font-size:0.78rem;background:var(--gold);color:var(--navy-deep);padding:2px 8px;margin-left:8px;letter-spacing:0.05em;font-weight:600;">CONFIRMED</span></h3>
+        <div class="title">Lecturer, Jimma Institute of Technology</div>
+        <div class="rel">Academic reference from the institution where I completed my B.Sc. in IT; can speak to academic performance and readiness for postgraduate study.</div>
+        <div class="contact">Email: Kebebew.ababu@ju.edu.et &nbsp;·&nbsp; Phone: +251 913 774 808 &nbsp;·&nbsp; P.O. Box 378</div>
+    </div>
+
+    <p style="margin-top: 24px; font-size: 0.95rem; color: var(--muted); text-align: center; font-style: italic;">Additional references and letters of recommendation available on request.</p>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section id="contact">
+    <div class="section-label">Get in Touch</div>
+    <h2>Contact</h2>
+
+    <div class="grid-2">
+        <div class="card">
+            <h3>Direct</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:bilalabdulkadir286@gmail.com" style="color:var(--navy);">bilalabdulkadir286@gmail.com</a></li>
+                <li><strong>Phone:</strong> +251 941 322 948</li>
+                <li><strong>Location:</strong> Addis Ababa, Ethiopia · Open to Relocation to Canada</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Online</h3>
+            <ul>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bilalabdulkadir" style="color:var(--navy);" target="_blank" rel="noopener">linkedin.com/in/bilalabdulkadir</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Bilalabdulkadir" style="color:var(--navy);" target="_blank" rel="noopener">github.com/Bilalabdulkadir</a></li>
+                <li><strong>Main Portfolio:</strong> <a href="https://bilalabdulkadir.github.io" style="color:var(--navy);" target="_blank" rel="noopener">bilalabdulkadir.github.io</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<div id="read-progress" aria-hidden="true"></div>
+
+<!-- ============== FOOTER ============== -->
+<footer>
+    <p><strong>Bilal Abdulkadir Muhammed</strong> · Centennial College 2026 Residence Scholarship</p>
+    <p>&copy; 2026 · Scholarship Portfolio Page</p>
+    <p style="margin-top: 12px;">
+        <a href="https://bilalabdulkadir.github.io">Main Portfolio</a>·
+        <a href="mailto:bilalabdulkadir286@gmail.com">Email</a>·
+        <a href="https://www.linkedin.com/in/bilalabdulkadir">LinkedIn</a>·
+        <a href="https://github.com/Bilalabdulkadir">GitHub</a>
+    </p>
+    <p style="margin-top: 8px; font-size: 0.85rem; color: var(--muted);">
+        &copy; <span id="footer-year">2026</span> · Scholarship Portfolio Page
+    </p>
+</footer>
+
+<!-- ============== SCRIPT ============== -->
+<script>
+(function () {
+    'use strict';
+
+    /* ---------- Helpers ---------- */
+    const $  = (sel, root = document) => root.querySelector(sel);
+    const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ---------- 1. Auto-update footer year ---------- */
+    const yearEl = $('#footer-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    /* ---------- 2. Sticky-nav scroll state + reading progress bar ---------- */
+    const nav        = $('nav');
+    const progress   = $('#read-progress');
+    const docEl      = document.documentElement;
+
+    function onScroll() {
+        const y = window.scrollY || docEl.scrollTop;
+
+        // Shrink-style nav once scrolled past hero
+        if (nav) nav.classList.toggle('nav-scrolled', y > 40);
+
+        // Reading progress
+        if (progress) {
+            const max = (docEl.scrollHeight - docEl.clientHeight) || 1;
+            const pct = Math.min(100, Math.max(0, (y / max) * 100));
+            progress.style.width = pct + '%';
+        }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* ---------- 3. Smooth anchor scroll with sticky-nav offset ---------- */
+    const navHeight = () => (nav ? nav.getBoundingClientRect().height : 0);
+
+    $$('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+            const id = link.getAttribute('href');
+            if (!id || id === '#' || id.length < 2) return;
+            const target = document.getElementById(id.slice(1));
+            if (!target) return;
+
+            e.preventDefault();
+            const top = target.getBoundingClientRect().top + window.scrollY - navHeight() - 12;
+            window.scrollTo({
+                top,
+                behavior: prefersReducedMotion ? 'auto' : 'smooth'
+            });
+            // Update URL hash without re-jumping
+            history.replaceState(null, '', id);
+        });
+    });
+
+    /* ---------- 4. Active section highlight in nav ---------- */
+    const sections = $$('main section[id]');
+    const navLinks = $$('nav a[href^="#"]');
+    const linkById = new Map(navLinks.map(a => [a.getAttribute('href').slice(1), a]));
+
+    if ('IntersectionObserver' in window && sections.length) {
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const link = linkById.get(entry.target.id);
+                if (!link) return;
+                if (entry.isIntersecting) {
+                    navLinks.forEach(a => a.classList.remove('is-active'));
+                    link.classList.add('is-active');
+                }
+            });
+        }, {
+            rootMargin: `-${Math.round(navHeight() + 20)}px 0px -65% 0px`,
+            threshold: 0
+        });
+        sections.forEach(s => spy.observe(s));
+    }
+
+    /* ---------- 5. Reveal-on-scroll for sections, cards, timeline ---------- */
+    const revealTargets = $$(
+        'section, .card, .ref-card, .timeline li, .pullquote'
+    );
+    revealTargets.forEach(el => el.classList.add('reveal'));
+
+    if ('IntersectionObserver' in window && !prefersReducedMotion) {
+        const revealer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        revealTargets.forEach(el => revealer.observe(el));
+    } else {
+        revealTargets.forEach(el => el.classList.add('is-visible'));
+    }
+
+    /* ---------- 6. External-link safety ---------- */
+    $$('a[href^="http"]').forEach(a => {
+        try {
+            const url = new URL(a.href);
+            if (url.host !== window.location.host) {
+                if (!a.target) a.target = '_blank';
+                const rels = new Set((a.rel || '').split(/\s+/).filter(Boolean));
+                rels.add('noopener'); rels.add('noreferrer');
+                a.rel = Array.from(rels).join(' ');
+            }
+        } catch (_) { /* ignore malformed URLs */ }
+    });
+
+    /* ---------- 7. Optional: trigger print dialog with ?print=1 ---------- */
+    if (/[?&]print=1\b/.test(window.location.search)) {
+        window.addEventListener('load', () => setTimeout(() => window.print(), 400));
+    }
+})();
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
