@@ -3,424 +3,728 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilal Abdulkadir | IT Support Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Bilal Abdulkadir Muhammed - Scholarship Portfolio</title>
     <style>
+        :root {
+            --primary-blue: #0f2c59;
+            --secondary-blue: #1d4ed8;
+            --accent-gold: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-light: #f9fafb;
+            --bg-pure: #ffffff;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
             line-height: 1.6;
         }
 
+        /* Hero Header Section */
         header {
-            background: linear-gradient(135deg, #020617, #1e293b);
-            padding: 80px 20px;
+            background-color: var(--primary-blue);
+            color: var(--bg-pure);
             text-align: center;
-            border-bottom: 2px solid #38bdf8;
+            padding: 4rem 1.5rem 3rem 1.5rem;
+            position: relative;
+        }
+
+        .subtitle-badge {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: inline-block;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #38bdf8;
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
             font-weight: 700;
         }
 
-        header p {
-            font-size: 1.2rem;
-            color: #cbd5e1;
-            margin-bottom: 30px;
+        .tagline {
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+            font-style: italic;
+            color: #e5e7eb;
         }
 
+        .meta-info {
+            font-size: 0.9rem;
+            color: #d1d5db;
+            margin-bottom: 2rem;
+        }
+
+        .meta-info span {
+            margin: 0 10px;
+        }
+
+        /* Action Buttons */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .btn-gold {
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+        }
+
+        .btn-gold:hover {
+            background-color: #d97706;
+            color: white;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--bg-pure);
+            color: var(--bg-pure);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--bg-pure);
+            color: var(--primary-blue);
+        }
+
+        /* Navigation Menu */
         nav {
-            text-align: center;
-            background: #020617;
-            padding: 20px;
+            background-color: var(--bg-pure);
+            border-bottom: 1px solid #e5e7eb;
             position: sticky;
             top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
         }
 
-        nav a {
-            color: #38bdf8;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .nav-links a {
             display: inline-block;
+            padding: 1rem 0.85rem;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
         }
 
-        nav a:hover {
-            color: #0ea5e9;
-            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
-            transform: translateY(-2px);
+        .nav-links a:hover {
+            color: var(--secondary-blue);
+        }
+
+        /* Section Container Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
         }
 
         section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
+            background-color: var(--bg-pure);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            margin-bottom: 2.5rem;
         }
 
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #38bdf8;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 15px;
+        .section-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-blue);
+        }
+
+        p {
+            color: var(--text-dark);
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        /* Blockquotes */
+        blockquote {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--accent-gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: var(--primary-blue);
+        }
+
+        .quote-author {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        /* Timeline / Process Track styling */
+        .timeline {
+            position: relative;
+            margin-top: 2rem;
+            padding-left: 25px;
+            border-left: 2px solid #e5e7eb;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -31px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent-gold);
+            border: 2px solid var(--bg-pure);
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-meta {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Grid Lists */
+        .grid-list {
+            list-style: none;
+        }
+
+        .grid-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 0.75rem;
+        }
+
+        .grid-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+        }
+
+        /* Work Cards Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media(min-width: 600px) {
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         .card {
-            background: #1e293b;
-            padding: 25px;
-            margin: 20px 0;
-            border-radius: 10px;
-            border-left: 4px solid #38bdf8;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 1.5rem;
+            background-color: var(--bg-light);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 25px rgba(56, 189, 248, 0.15);
-            background: #334155;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-        .card h3 {
-            color: #38bdf8;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.25rem;
         }
 
-        .card ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .card li {
-            padding: 10px 0;
-            padding-left: 25px;
-            position: relative;
-            color: #cbd5e1;
-        }
-
-        .card li:before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: #38bdf8;
-            font-weight: bold;
-        }
-
-        .card p {
-            color: #cbd5e1;
-            line-height: 1.8;
-        }
-
-        button {
-            padding: 12px 30px;
-            background: #38bdf8;
-            border: none;
-            border-radius: 5px;
-            color: #020617;
+        .card-tag {
+            font-size: 0.75rem;
             font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
+            color: var(--secondary-blue);
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Badges Array System */
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background-color: #eff6ff;
+            color: var(--secondary-blue);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #dbeafe;
+        }
+
+        .badge-group-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        /* References block */
+        .ref-card {
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .ref-card:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .ref-name {
+            font-weight: 700;
+            color: var(--primary-blue);
             display: inline-block;
         }
 
-        button:hover {
-            background: #0ea5e9;
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+        .status-confirmed {
+            background-color: #10b981;
+            color: white;
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 8px;
+            font-weight: 700;
+            vertical-align: middle;
+            text-transform: uppercase;
         }
 
-        button:active {
-            transform: scale(0.98);
+        .ref-title {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
         }
 
-        .contact-link {
-            color: #38bdf8;
+        .ref-details {
+            font-size: 0.85rem;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            padding: 0.75rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Section Details */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media(min-width: 600px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .contact-col h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-list strong {
+            color: var(--primary-blue);
+            display: inline-block;
+            width: 80px;
+        }
+
+        .contact-list a {
+            color: var(--secondary-blue);
             text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
         }
 
-        .contact-link:hover {
-            color: #0ea5e9;
-            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+        .contact-list a:hover {
+            text-decoration: underline;
         }
 
         footer {
+            background-color: var(--primary-blue);
+            color: #9ca3af;
             text-align: center;
-            background: #020617;
-            padding: 30px 20px;
-            margin-top: 60px;
-            color: #94a3b8;
-            font-size: 0.95rem;
-            border-top: 2px solid #38bdf8;
+            padding: 2rem 1.5rem;
+            font-size: 0.85rem;
+            border-top: 4px solid var(--accent-gold);
         }
 
         footer p {
-            margin: 0;
-        }
-
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-item {
-            background: #0f172a;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #38bdf8;
-        }
-
-        .skill-item h4 {
-            color: #38bdf8;
-            margin-bottom: 10px;
-        }
-
-        .project-card {
-            background: #0f172a;
-            border: 1px solid #38bdf8;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                padding: 40px 20px;
-            }
-
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            nav {
-                padding: 15px;
-            }
-
-            nav a {
-                margin: 0 10px;
-                font-size: 0.9rem;
-            }
-
-            section {
-                padding: 40px 15px;
-            }
-
-            section h2 {
-                font-size: 1.5rem;
-            }
-
-            .card {
-                padding: 15px;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            nav a {
-                display: block;
-                margin: 8px 0;
-            }
-
-            section {
-                padding: 30px 10px;
-            }
-
-            section h2 {
-                font-size: 1.3rem;
-            }
+            color: #9ca3af;
+            margin-bottom: 0;
         }
     </style>
 </head>
-
 <body>
+
+    <!-- Hero Header Block -->
     <header>
+        <span class="subtitle-badge">Centennial College - Residence Scholarship - Fall 2026</span>
         <h1>Bilal Abdulkadir Muhammed</h1>
-        <p>IT Support Specialist | Data Analyst | Cybersecurity Enthusiast</p>
-        <a href="Bilal_Abdulkadir_CV.pdf" download>
-            <button>Download CV</button>
-        </a>
+        <p class="tagline">From Dera's databases to Canada's workplaces — building healthier systems, one record and one person at a time.</p>
+        <div class="meta-info">
+            <span>Addis Ababa, Ethiopia</span> | <span>Open to Relocation to Canada</span> | <span>+251 941 322 948</span>
+        </div>
+        <div class="btn-container">
+            <a href="#story" class="btn btn-gold">Read My Story</a>
+            <a href="https://bilalabdulkadir.github.io" class="btn btn-outline" target="_blank">← Main Portfolio</a>
+        </div>
     </header>
 
+    <!-- Navigation Bar -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-links">
+            <a href="#story">Story</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#why-centennial">Why Centennial</a>
+            <a href="#references">References</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="card">
-            <div class="about-content">
-                <p>I am an experienced IT Support Specialist with a passion for diagnosing and resolving technical issues efficiently. With hands-on experience in Windows troubleshooting, network configuration, and hardware maintenance, I deliver reliable technical support.</p>
-                <p>My expertise spans from hardware maintenance to complex network configuration issues, complemented by data analysis skills using Python and Power BI. I am passionate about staying current with cybersecurity best practices and emerging technologies.</p>
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Personal Statement Section -->
+        <section id="story">
+            <div class="section-label">Personal Statement</div>
+            <h2>The Day I Learned Systems Are Human</h2>
+            <p>Five years ago, on a Tuesday afternoon in Dera, I sat beside a 58-year-old woman named Tigist who had been waiting three hours to renew her municipal ID. The database was down — again. As the Data Entry & Database Support Officer, I knew the problem was not the server. It was a workflow no one had ever questioned.</p>
+            <p>I spent the next two weeks mapping the process, standardizing input fields, and training two colleagues. Within a month, duplicate records had fallen by 40%, and Tigist's daughter was able to register her newborn in under twenty minutes.</p>
+            
+            <blockquote>
+                <p>"That day taught me something I carry into every project I touch: systems are never just technical. They are human."</p>
+                <span class="quote-author">— Bilal Abdulkadir, Dera City, 2020</span>
+            </blockquote>
+
+            <p>That belief is what brings me to Centennial College. For six years I have worked at the intersection of technology and people — first as a database officer serving 50,000+ municipal records, then as an IT Support Specialist where I resolved 95% of tickets within SLA timelines and mentored more than ten colleagues through their growth. The work was deeply satisfying, and it was not enough.</p>
+            <p>Every ticket, every data field, every system I built was ultimately a question of wellbeing: was this person able to do their job without burning out? Was this family able to access the service they needed? Was this workplace actually well, or merely functional? I want to move closer to those questions. The <strong>Workplace Wellness and Health Promotion Program at Centennial</strong> is the bridge I have been looking for — a chance to pair my analytical mindset and operational experience with formal training in mental health, occupational health, and the design of healthier workplaces.</p>
+            <p>Relocating from Addis Ababa to Canada is not a small step, and I do not approach it lightly. I have spent the past year preparing — earning certifications in cloud computing, cybersecurity infrastructure, emotional intelligence, and hospitality practice. Each one was a deliberate signal to myself that the next chapter requires more than technical skill. It requires the ability to read a room, to listen across cultures, and to lead with care.</p>
+        </section>
+
+        <!-- Leadership Essay Section -->
+        <section id="leadership">
+            <div class="section-label">Leadership Essay</div>
+            <h2>What a Fragmented Database Taught Me About People</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">The Role: Front Line of Public Service</div>
+                    <div class="timeline-meta">Dera City Administration | 2020 – 2022</div>
+                    <p>As Data Entry & Database Support Officer, my role was, on paper, narrow: enter records, verify them, keep the system running. In practice, I was standing at the front line of a city trying to serve tens of thousands of residents through a paper-and-spreadsheet system that was buckling under its own weight. I came to understand, very quickly, that the smallest typo on my end could become a three-hour wait for a citizen at the front counter.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">The Evolution: Earned, Not Assigned</div>
+                    <div class="timeline-meta">Within the first year</div>
+                    <p>I was appointed on the strength of my IT background, but the leadership part was not assigned — it was earned. Within my first year, my supervisor began routing newer colleagues to me for guidance. What started as informal shoulder-to-shoulder help became structured training: I led sessions on new digital registration forms, walked team members through verification protocols, and served as the bridge between the technical side of the system and the administrative staff who used it every day.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">The Result: 40% Fewer Duplicates, 99% Accuracy</div>
+                    <div class="timeline-meta">Team-wide digital transformation</div>
+                    <p>The team set a simple goal: move from manual, error-prone records to a reliable digital database. I led the design of standardized data entry protocols, implemented new digital registration forms, and embedded verification steps at the point of entry rather than after the fact. The result: a measurable reduction in entry errors, a streamlined workflow for the entire administrative team, and accurate citizen profiles that allowed public services to be delivered faster and more reliably.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">The Setback: The Audit Nobody Wanted</div>
+                    <div class="timeline-meta">Mid-project</div>
+                    <p>The most difficult stretch came when we surfaced the scale of the problem we had inherited: fragmented, incomplete, and sometimes contradictory resident records accumulating for years. The team was demoralized, and there was real resistance to the additional work a full audit would require. I responded by initiating a structured data audit, building a simple verification checklist, and sitting with colleagues one-on-one to walk through the inconsistencies we were finding. Leadership, I learned, is rarely about a clean plan — it is about doing the slow, unglamorous work of bringing people with you.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">The Lesson: Buy-In Earlier Would Have Saved Weeks</div>
+                    <div class="timeline-meta">Looking back</div>
+                    <p>Looking back, the most important lesson is that technical skill is necessary but never sufficient. Knowing how to design a database does not by itself change an organization. What changes an organization is the ability to communicate clearly, to listen to resistance rather than override it, and to build consensus around a better way of working. If I could lead this initiative again, I would have introduced collaborative training sessions from day one. Buy-in earlier would have saved us weeks of friction.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>IT Support Specialist – Star Development Association (2022–2025)</h3>
-            <ul>
-                <li>Provided first & second-level IT support to end users</li>
-                <li>Resolved hardware, software, and network issues efficiently</li>
-                <li>Managed user accounts and system access controls</li>
-                <li>Supported cybersecurity and backup systems implementation</li>
-                <li>Maintained detailed documentation and knowledge base articles</li>
-            </ul>
-        </div>
+        <!-- Professional Experience Section -->
+        <section id="experience">
+            <div class="section-label">Professional Experience</div>
+            <h2>Six Years at the Intersection of Tech and People</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">IT Support Specialist</div>
+                    <div class="timeline-meta">Star Development Association, Ethiopia | 2022 – 2025</div>
+                    <ul class="grid-list">
+                        <li>Resolved 95% of technical support tickets within SLA timelines, reducing operational downtime by 15%.</li>
+                        <li>Mentored 10+ staff members on troubleshooting best practices, strengthening team capability and service consistency.</li>
+                        <li>Managed user accounts, system access controls, and cybersecurity & backup systems.</li>
+                        <li>Maintained detailed documentation and knowledge-base articles for organizational continuity.</li>
+                    </ul>
+                </div>
 
-        <div class="card">
-            <h3>Database Entry Officer – Dera City Administration (2020–2022)</h3>
-            <ul>
-                <li>Managed and maintained municipal database records with precision</li>
-                <li>Ensured data accuracy and quality control standards</li>
-                <li>Supported digital registration systems and data migration</li>
-                <li>Collaborated with multiple departments on data management projects</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="card skill-item">
-                <h4>Operating Systems & Support</h4>
-                <ul>
-                    <li>Windows Troubleshooting</li>
-                    <li>System Configuration</li>
-                    <li>Hardware Maintenance</li>
-                    <li>IT Support & Help Desk</li>
-                </ul>
+                <div class="timeline-item">
+                    <div class="timeline-title">Data Entry & Database Support Officer</div>
+                    <div class="timeline-meta">Dera City Administration, Ethiopia | 2020 – 2022</div>
+                    <ul class="grid-list">
+                        <li>Validated and maintained 50,000+ records with 99% accuracy across municipal databases.</li>
+                        <li>Improved data quality controls, reducing duplicate records by 40%.</li>
+                        <li>Led the design and rollout of standardized digital registration forms city-wide.</li>
+                        <li>Supported digital registration systems, data migration, and cross-department collaboration.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="card skill-item">
-                <h4>Networking & Security</h4>
-                <ul>
-                    <li>IP Configuration & DNS</li>
-                    <li>WiFi Troubleshooting</li>
-                    <li>Network Diagnostics</li>
-                    <li>Cybersecurity Fundamentals</li>
-                </ul>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem 0; color: var(--primary-blue);">Community & Leadership</h3>
+            <ul class="grid-list">
+                <li><strong>Volunteer Computer Tutor</strong> | 2014 - 2019</li>
+                <li><strong>Digital Literacy</strong> for elders & neighbors</li>
+                <li><strong>Cross-cultural bridge-builder</strong></li>
+            </ul>
+        </section>
+
+        <!-- Key Projects Section -->
+        <section id="projects">
+            <div class="section-label">Key Projects</div>
+            <h2>Selected Work</h2>
+            <div class="project-grid">
+                <div class="card">
+                    <div class="card-title">IT Support Data Analysis</div>
+                    <div class="card-tag">Python • Power BI</div>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">Analyzed IT support tickets and performance metrics to identify trends and bottlenecks. Improved response efficiency by 20% through data-driven recommendations.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">Power BI Dashboarding</div>
+                    <div class="card-tag">Microsoft Power BI</div>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">Designed interactive dashboards to monitor operational performance. Enabled leadership to act on real-time, visual KPIs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cybersecurity Risk Simulation</div>
+                    <div class="card-tag">Forage • OPSWAT</div>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">Conducted comprehensive risk assessment and vulnerability analysis using structured frameworks. Recommended and documented mitigation strategies.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cloud Collaboration</div>
+                    <div class="card-tag">Google Drive • AI Tools</div>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">Implemented Google Drive and AI-powered workflows for team collaboration. Improved document management and team efficiency across departments.</p>
+                </div>
             </div>
-            <div class="card skill-item">
-                <h4>Data Analysis & Tools</h4>
-                <ul>
-                    <li>Power BI & Microsoft Fabric</li>
-                    <li>Python Data Analysis</li>
-                    <li>Database Management</li>
-                    <li>Data Visualization</li>
-                </ul>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <div class="section-label">Continuous Learning</div>
+            <h2>Certifications & Professional Development</h2>
+            
+            <div class="badge-group-title">Cloud & AI</div>
+            <div class="badge-container">
+                <span class="badge">AWS AI Practitioner Pathway - Udacity</span>
+                <span class="badge">Gemini in Google Workspace - Udacity</span>
+                <span class="badge">Describe Cloud Computing - Microsoft</span>
             </div>
-        </div>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="card project-card">
-            <h3>IT Support Data Analysis</h3>
-            <p>Analyzed IT support tickets and performance metrics using Python and Power BI to identify trends and improve response efficiency by 20%.</p>
-        </div>
+            <div class="badge-group-title">Cybersecurity & Infrastructure</div>
+            <div class="badge-container">
+                <span class="badge">CompTIA Security+ (SY0-701) - CyberinternView Prep</span>
+                <span class="badge">Introduction to Critical Infrastructure Protection - OPSWAT</span>
+                <span class="badge">Cyber Security Operations Job Simulation - Forage</span>
+            </div>
 
-        <div class="card project-card">
-            <h3>Cybersecurity Risk Simulation</h3>
-            <p>Performed comprehensive risk assessment and vulnerability analysis using structured frameworks to identify and mitigate potential security threats.</p>
-        </div>
+            <div class="badge-group-title">Data & Business Intelligence</div>
+            <div class="badge-container">
+                <span class="badge">Power BI - Microsoft</span>
+                <span class="badge">Copilot in Power BI - Microsoft</span>
+                <span class="badge">Microsoft Fabric Analytics - Microsoft</span>
+                <span class="badge">Data Analysis Fundamentals - Microsoft</span>
+                <span class="badge">Data Analysis & Storytelling - Springpod</span>
+            </div>
 
-        <div class="card project-card">
-            <h3>Cloud Collaboration Project</h3>
-            <p>Implemented Google Drive and AI-powered tools for workflow optimization, improving team collaboration and document management efficiency.</p>
-        </div>
-    </section>
+            <div class="badge-group-title">Professional Skills</div>
+            <div class="badge-container">
+                <span class="badge">Developing Emotional Intelligence - Saint Louis University</span>
+                <span class="badge">Maze 101: Getting Started with Maze - Maze University</span>
+                <span class="badge">Hospitality Work Experience - Springpod / Marriott Bonvoy</span>
+            </div>
+        </section>
 
-    <section id="certifications">
-        <h2>Certifications & Licenses</h2>
+        <!-- Why Centennial Section -->
+        <section id="why-centennial">
+            <div class="section-label">Residence Community Commitment</div>
+            <h2>What I Will Bring to Centennial</h2>
+            <p>If I am fortunate enough to receive this scholarship, I will bring the same orientation to the residence community role: a deep belief that systems — whether a database, a help desk, or a residence hall — are, at their core, a collection of human beings trying to do well by one another.</p>
+            <p>I have been a Volunteer Computer Tutor since 2014, teaching digital literacy to neighbors and elders who had been left behind by the rapid spread of mobile technology. I know what it feels like to be the person in the room who does not yet speak the language of a new system, and I know the dignity of being helped without condescension. I want to be that person for incoming students at Centennial — someone who helps a first-generation international student navigate the student portal, who organizes a peer wellness check-in during exam season, or who simply listens when homesickness arrives unannounced.</p>
+            
+            <blockquote>
+                <p>"Centennial's mission is to cultivate graduates who are not only professionally capable but also community-minded. I want to be one of those graduates."</p>
+            </blockquote>
 
-        <div class="card">
-            <h3>Cybersecurity & IT Security</h3>
-            <ul>
-                <li><strong>CompTIA Security+ (SY0-701)</strong> – Cyberinterview Prep (Mar 2026)</li>
-                <li>Introduction to Critical Infrastructure Protection – OPSWAT (Mar 2026 – Mar 2027)</li>
-                <li>Datacom Cyber Security Operations Job Simulation – Forage (Mar 2026)</li>
-            </ul>
-        </div>
+            <p>Centennial's mission is to cultivate graduates who are not only professionally capable but also community-minded. I want to enter the workforce in Canada with the technical fluency I have built over six years, the wellness training Centennial will give me, and the lived understanding that every system is, ultimately, human. Thank you for considering my application. I will work hard to make this investment worth your faith.</p>
+        </section>
 
-        <div class="card">
-            <h3>Data Analytics & Business Intelligence</h3>
-            <ul>
-                <li>Power BI – Microsoft (2026)</li>
-                <li>Copilot in Power BI – Microsoft</li>
-                <li>Microsoft Fabric Analytics – Microsoft</li>
-                <li>Data Analysis Fundamentals – Microsoft</li>
-                <li>Data Analysis & Storytelling – Springpod</li>
-            </ul>
-        </div>
+        <!-- References Section -->
+        <section id="references">
+            <div class="section-label">References</div>
+            <h2>People Who Can Speak To My Work</h2>
+            
+            <div class="ref-card">
+                <div>
+                    <span class="ref-name">Abdurezak Jeylan Abdulkadir</span>
+                    <span class="status-confirmed">Confirmed</span>
+                </div>
+                <div class="ref-title">General Manager, Star Development Association (SDA), Dera, Ethiopia</div>
+                <div class="ref-details">
+                    <strong>Direct organizational head:</strong> Signed my Experience Letter (Ref. SDA/EXPOS/25, dated 30/12/2025) confirming my role as IT Service Support Officer (2022-2025) and my contributions to IT support, systems, and project operations.<br>
+                    <strong>Email:</strong> Star3545@gmail.com (SDA organizational)<br>
+                    <strong>Phone:</strong> +251 945 332 535 (SDA office)
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>AI & Productivity Tools</h3>
-            <ul>
-                <li>Gemini in Google Drive – Udacity</li>
-            </ul>
-        </div>
+            <div class="ref-card">
+                <div>
+                    <span class="ref-name">Saladin Musa</span>
+                    <span class="status-confirmed">Confirmed</span>
+                </div>
+                <div class="ref-title">Lecturer and Researcher, Kombolcha Institute of Technology (former of Jimma University)</div>
+                <div class="ref-details">
+                    <strong>Academic reference:</strong> Can speak to scholarship aptitude, training, and growth in Information Technology.<br>
+                    <strong>Email:</strong> Salahadin.seid@kiot.edu.et • <strong>Phone:</strong> +251 912 274 777 • P.O. Box 378
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>IT Professional</h3>
-            <ul>
-                <li>Certified Information Technology Professional (CITP) – Jimma University (2025)</li>
-            </ul>
-        </div>
-    </section>
+            <div class="ref-card">
+                <div>
+                    <span class="ref-name">Kebebew Ababu, M.Sc.</span>
+                    <span class="status-confirmed">Confirmed</span>
+                </div>
+                <div class="ref-title">Lecturer, Jimma Institute of Technology</div>
+                <div class="ref-details">
+                    <strong>Academic reference</strong> from the institution where I completed my B.Sc. in IT; can speak to academic performance and readiness for postgraduate study.<br>
+                    <strong>Email:</strong> Kebebew.ababu@ju.edu.et • <strong>Phone:</strong> +251 913 774 808 • P.O. Box 378
+                </div>
+            </div>
+            
+            <p style="font-size: 0.85rem; color: var(--text-light); font-style: italic; margin-top: 1rem; margin-bottom: 0;">Additional references and letters of recommendation available on request.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-            <p><strong>Email:</strong> <a href="mailto:bilalabdulkadir286@gmail.com" class="contact-link">bilalabdulkadir286@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bilalabdulkadir" class="contact-link" target="_blank">linkedin.com/in/bilalabdulkadir</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Bilalabdulkadir" class="contact-link" target="_blank">github.com/Bilalabdulkadir</a></p>
-            <p style="margin-top: 20px; color: #94a3b8; font-size: 0.9rem;">Feel free to reach out for collaboration, questions, or opportunities!</p>
-        </div>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-label">Get in Touch</div>
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-col">
+                    <h3>Direct</h3>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> <a href="mailto:bilalabdulkadir286@gmail.com">bilalabdulkadir286@gmail.com</a></li>
+                        <li><strong>Phone:</strong> +251 941 322 948</li>
+                        <li><strong>Location:</strong> Addis Ababa, Ethiopia • Open to Relocation to Canada</li>
+                    </ul>
+                </div>
+                <div class="contact-col">
+                    <h3>Online</h3>
+                    <ul class="contact-list">
+                        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/bilalabdulkadir" target="_blank">linkedin.com/in/bilalabdulkadir</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/bilalabdulkadir" target="_blank">github.com/bilalabdulkadir</a></li>
+                        <li><strong>Portfolio:</strong> <a href="https://bilalabdulkadir.github.io" target="_blank">bilalabdulkadir.github.io</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Bilal Abdulkadir Muhammed | IT Support Portfolio</p>
+        <p>Bilal Abdulkadir Muhammed • Centennial College 2026 Residence Scholarship Portfolio Page</p>
     </footer>
 
 </body>
